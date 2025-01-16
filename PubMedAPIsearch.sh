@@ -44,17 +44,16 @@ cochlea+NOT\
 
 #Date ranges (not yet specified for cmd...)
 curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=\
-+semicircular+canal+OR\
+cochlea+OR\+semicircular+canal+OR\+basilar+papilla+OR\
 +vestibular+macula+OR\
 +otolith+OR\
 +crista+ampullaris+OR\
++organ+of+corti+OR\
 +utricle+saccule+NOT\
-+prostatic+NOT\
-cochlea+NOT\
-+basilar+papilla+NOT\
-+organ+of+corti+NOT\
++prostatic\
 &datetype=pdat\
-&mindate=1825%2F01%2F01\
+&mindate=1825\
+&maxdate=2025\
 &retstart=0\
 &retmax=60\
 &tool=biomed3&retmode=json"
