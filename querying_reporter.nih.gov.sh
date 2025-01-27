@@ -4,13 +4,13 @@
 #     . querying_reporter.nih.gov.sh      #  . means source, which loads this script into the shell environment so you can run from_file() or inline()
 #     from_file
 inline () {
-curl -qX POST https://api.reporter.nih.gov/v2/projects/search \
+curl -sX POST https://api.reporter.nih.gov/v2/projects/search \
   -H "Content-Type: application/json" \
   -d '{"key1":"value1", "key2":"value2"}'
 }
 
 from_file () {
-curl -qX POST https://api.reporter.nih.gov/v2/projects/search \
+curl -sX POST https://api.reporter.nih.gov/v2/projects/search \
   -H "Content-Type: application/json" \
   -d @payload.json
 }
