@@ -2,6 +2,7 @@
 
 #Pull UIDs for all anatomical terms relating to the inner ear from 1825 to 2025, and exclude non-ear related terms like protstatic utricle and laryngeal saccule (63611 hits)
 curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=\
+
 cochlea+OR\+basilar+papilla+OR\+organ+of+corti+OR\+stria+vascularis+OR\+basilar+membrane+OR\+reissner's+membrane+OR\+spiral+ganglion+OR\
 \vestibular+labyrinth+OR\+semicircular+canal+OR\+vestibular+macula+OR\+otolith+OR\+crista+ampullaris+OR\+utricle+OR\+saccule+NOT\
 +prostatic+NOT\+laryngeal\
@@ -48,3 +49,20 @@ cochlea+OR\+basilar+papilla+OR\+organ+of+corti+OR\+stria+vascularis+OR\+basilar+
 &retmax=60\
 &tool=biomed3&retmode=json"
 
+cochlea+OR+utricle\
+&datetype=pdat\
+&mindate=1800/01/01\
+&maxdate=3000/01/01\
+&dbfrom=pubmed\
+&tool=biomed3&\
+&retmode=json"
+
+
+# # Search boolean terms
+# curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=\
+# +covid19\
+# &datetype=edat\
+# &mindate=1880\
+# &maxdate=2015\
+# &tool=biomed3&\
+# &retmode=json"
