@@ -1,6 +1,6 @@
  {
     "criteria": {
-            advanced_text_search: { search_field: "terms","search_text","projecttitle": "(cochlea OR \"basilar papilla\" OR \"organ of corti\" OR \"stria vascularis\" OR \"basilar membrane\>\"vestibular labyrinth\" OR \"semicircular canal\" OR \"vestibular macula\" OR otolith OR crista ampullaris OR utricle) saccule NOT prostatic NOT laryngeal" },
+            advanced_text_search: { search_field: "terms,projecttitle", "search_text": "(cochlea OR \"basilar papilla\" OR \"organ of corti\" OR \"stria vascularis\" OR \"basilar membrane\" OR \"vestibular labyrinth\" OR \"semicircular canal\" OR \"vestibular macula\" OR otolith OR crista ampullaris OR utricle)"}
     },
     "include_fields": [
             "FiscalYear", "ProjectNum"
