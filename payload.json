@@ -6,7 +6,7 @@
 	    }
     },
     "include_fields": [
-	    "FiscalYear", "ProjectNum"
+	    "FiscalYear", "ProjectNum", "AwardAmount", "AwardNoticeDate"
     ],
     "offset": 0,
     "limit": 4,
