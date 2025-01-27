@@ -1,15 +1,14 @@
  {
     "criteria": {
-	    advanced_text_search: { operator: "or", search_field: "projecttitle, abstracttext, terms", "search_text":  },
-	    award_notice_date: { "from_date": "1985-01-01",
-           "to_date": "2025-01-01"
-	    }
-    },
+	    advanced_text_search: {  search_field: "terms",  "search_text": "(utricle or cochlea) not fossa" }
+	    },
     "include_fields": [
-	    "FiscalYear", "ProjectNum", "AwardAmount", "AwardNoticeDate"
+	    "FiscalYear",
+	    "ProjectNum",
+	    "AwardAmount"
     ],
     "offset": 0,
-    "limit": 4,
+    "limit": 1,
     "sort_field": "appl_id",
     "sort_order": "desc"
  }
