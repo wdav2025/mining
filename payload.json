@@ -1,6 +1,6 @@
  {
     "criteria": {
-	    advanced_text_search: { operator: "or", search_field: "projecttitle, abstracttext, terms", "search_text": "utricle" OR "cochlea" },
+	    advanced_text_search: { operator: "or", search_field: "projecttitle, abstracttext, terms", "search_text": "cochlea" },
 	    award_notice_date: { "from_date": "1985-01-01",
            "to_date": "2025-01-01"
 	    }
