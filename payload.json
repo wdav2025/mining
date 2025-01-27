@@ -1,6 +1,6 @@
  {
     "criteria": {
-	    advanced_text_search: { operator: "and", search_field: "terms", "search_text": "utricle" },
+	    advanced_text_search: { operator: "and", search_field: "projecttitle, abstracttext, terms", "search_text": "utricle" },
 	    award_notice_date: { "from_date": "1985-02-17",
            "to_date": "2021-05-01"
 	    }
