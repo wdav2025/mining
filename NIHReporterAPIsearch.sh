@@ -1,4 +1,5 @@
 #Search the NIHReporter Database for All Training Grants
+curl -s "
 {
   "criteria":{ advanced_text_search: { operator: "and",
 search_field: "projecttitle,abstracttext,terms", "search_text": "brain
