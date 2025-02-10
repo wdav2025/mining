@@ -1,8 +1,17 @@
 # Info
 
+## Note about using python to run NIH_query.py
 
-You need Python and Bash to run these files:
+This script requires "requests".
 
-    BioC_search.py
+    python3 -m venv env-mining
 
-    PubMedAPIsearch.sh
+    source env-mining/bin/activate
+
+
+Then ONE TIME
+
+    pip3 install requests
+
+
+Then you can run the script.
