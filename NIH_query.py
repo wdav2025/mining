@@ -10,7 +10,11 @@ query_payload = {
             "FiscalYear", "ProjectNum"
     ],
     "offset": 0,
+<<<<<<< HEAD
     "limit": 4,
+=======
+    "limit": 500,
+>>>>>>> d4006ce (Re-write the NIH query in Python instead of shell + curl)
     "sort_field": "appl_id",
     "sort_order": "desc"
  }
