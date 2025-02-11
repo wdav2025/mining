@@ -1,5 +1,7 @@
+import json
 import requests
 import time
+
 endpoint = "https://api.reporter.nih.gov/v2/projects/search"
 
 query_payload = {
@@ -10,20 +12,39 @@ query_payload = {
             "FiscalYear", "ProjectNum"
     ],
     "offset": 0,
-    "limit": 500,
+    "limit": 10,
     "sort_field": "appl_id",
     "sort_order": "desc"
  }
 
-r = requests.post(endpoint, json=query_payload)
+def make_request(q):
+    r = requests.post(endpoint, json=q)
+    return r
 
-# print(f"STATUS CODE: {r.status_code}")
+    # print(f"STATUS CODE: {r.status_code}")
 
-# print(" ----- (response) -----")
+    # print(" ----- (response) -----")
+
+    #total_results = r.json()['meta']['total']
 
 
-import json
+    #time.sleep(2)
 
-time.sleep(2)
+#print(json.dumps(r.json()))
 
-print(json.dumps(r.json()))
+
+#for i in range(10):
+total_results = 90
+step = 10
+
+for i in range(0, ((total_results + step ) // step) * step, step ):
+
+    query_payload['offset'] = i
+    print(query_payload['offset'])
+
+    r = make_request(query_payload)
+
+
+    with open("data.json", "a+") as outfile:
+        outfile.write(json.dumps(r.json()))
+    time.sleep(6)
